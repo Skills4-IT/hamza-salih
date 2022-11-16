@@ -21,7 +21,5 @@ const saying = ["lilbabythegoat","whytheysayffifdyfor?","yankeewithnobrim","I am
    return `${firstName} ${lastName}`;
  }
 
- const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
 
     

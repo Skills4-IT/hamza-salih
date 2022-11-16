@@ -23,20 +23,56 @@
 
 
     <p id='HamzasText'>
-        Test. I updated this, and this will be visible in your fork to sync.
-        Remsey: I added this!
+        <input type="text" id='inputTextFieldName'>Awesome Personality Trait
+        <button type="button" id='myButton' onclick="addPersonalityTrait()"> Click me </button>
+
+
+
+
+        <p id="demo"></p>
+        <script>
+            const personality = ["funny", "carring", "humble", "genuine", "alwaysPositive", "alwaysSmiling",
+                "hilarious",
+                "very hard worker", "50cent", "goodenergy", "bestcodplayer", "smart", "rollieboy"
+            ]
+
+            personality.reverse(); //
+
+            function addPersonalityTrait() {
+                //  alert('Yes');
+                let newtrait = document.getElementById('inputTextFieldName').value;
+                personality.push(newtrait);
+                personality.sort(); // 
+                document.getElementById("demo").innerHTML = personality.join(' - ');
+            }
+
+     
         
-    </p>
-    <p id="demo"></p>
-    <script>
-        const personality = ["funny", "carring", "humble", "genuine", "alwaysPositive", "alwaysSmiling", "hilarious",
-            "veryHardWorker", "50cent", "goodenergy", "bestcodplayer", "smart", "rollieboy"
-        ]
-        document.getElementById("demo").innerHTML = personality;
-    </script>
+
+            //Dispplayed like this funny - carring - humble
 
 
-    <script src="js/app.js"></script>
+
+
+
+            // const emptyList = [];
+            // emptyList[0] = 'Blue';
+
+
+
+            // names[3] = ;
+
+
+            // function captureData() {
+            //     const names = [];
+            //     names[3] = document.getElementById('inputTextFieldName').value;
+            //     names[0] = 'Terry';
+            // names[1] = 'Priscilla';
+            // names[2] = 'Marquel';
+        </script>
+
+
+        <script src="js/app.js"></script>
 </body>
 
 </html>
