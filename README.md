@@ -1,2 +1,2 @@
-# hamza-salih
+# Hamza Salih
  In honor to Hamza
